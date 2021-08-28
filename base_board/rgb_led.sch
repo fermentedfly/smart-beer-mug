@@ -1,0 +1,195 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED_RAGB D?
+U 1 1 6127565E
+P 4900 3400
+AR Path="/6127565E" Ref="D?"  Part="1" 
+AR Path="/6126DE2F/6127565E" Ref="D1"  Part="1" 
+AR Path="/612B4E73/6127565E" Ref="D2"  Part="1" 
+AR Path="/612B55AF/6127565E" Ref="D3"  Part="1" 
+F 0 "D1" V 4854 3760 50  0000 L CNN
+F 1 "LED_RAGB" V 4945 3760 50  0000 L CNN
+F 2 "" H 4900 3350 50  0001 C CNN
+F 3 "~" H 4900 3350 50  0001 C CNN
+	1    4900 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61275664
+P 4900 3650
+AR Path="/61275664" Ref="#PWR?"  Part="1" 
+AR Path="/6126DE2F/61275664" Ref="#PWR013"  Part="1" 
+AR Path="/612B4E73/61275664" Ref="#PWR015"  Part="1" 
+AR Path="/612B55AF/61275664" Ref="#PWR017"  Part="1" 
+F 0 "#PWR013" H 4900 3400 50  0001 C CNN
+F 1 "GND" H 4905 3477 50  0000 C CNN
+F 2 "" H 4900 3650 50  0001 C CNN
+F 3 "" H 4900 3650 50  0001 C CNN
+	1    4900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3600 4900 3650
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 6127566B
+P 5000 2250
+AR Path="/6127566B" Ref="Q?"  Part="1" 
+AR Path="/6126DE2F/6127566B" Ref="Q5"  Part="1" 
+AR Path="/612B4E73/6127566B" Ref="Q8"  Part="1" 
+AR Path="/612B55AF/6127566B" Ref="Q11"  Part="1" 
+F 0 "Q5" H 5205 2204 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 5205 2295 50  0000 L CNN
+F 2 "" H 5200 2350 50  0001 C CNN
+F 3 "~" H 5000 2250 50  0001 C CNN
+	1    5000 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 61275671
+P 4250 2050
+AR Path="/61275671" Ref="Q?"  Part="1" 
+AR Path="/6126DE2F/61275671" Ref="Q4"  Part="1" 
+AR Path="/612B4E73/61275671" Ref="Q7"  Part="1" 
+AR Path="/612B55AF/61275671" Ref="Q10"  Part="1" 
+F 0 "Q4" H 4455 2004 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 4455 2095 50  0000 L CNN
+F 2 "" H 4450 2150 50  0001 C CNN
+F 3 "~" H 4250 2050 50  0001 C CNN
+	1    4250 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_PMOS_DGS Q?
+U 1 1 61275677
+P 5750 2400
+AR Path="/61275677" Ref="Q?"  Part="1" 
+AR Path="/6126DE2F/61275677" Ref="Q6"  Part="1" 
+AR Path="/612B4E73/61275677" Ref="Q9"  Part="1" 
+AR Path="/612B55AF/61275677" Ref="Q12"  Part="1" 
+F 0 "Q6" H 5955 2354 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 5955 2445 50  0000 L CNN
+F 2 "" H 5950 2500 50  0001 C CNN
+F 3 "~" H 5750 2400 50  0001 C CNN
+	1    5750 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 1600 4150 1850
+Wire Wire Line
+	4150 1600 4900 1600
+Wire Wire Line
+	4900 1600 4900 2050
+Connection ~ 4150 1600
+Wire Wire Line
+	4900 1600 5650 1600
+Wire Wire Line
+	5650 1600 5650 2200
+Connection ~ 4900 1600
+Text HLabel 4500 2050 2    50   Input ~ 0
+RED
+Text HLabel 5250 2250 2    50   Input ~ 0
+GREEN
+Text HLabel 6000 2400 2    50   Input ~ 0
+BLUE
+Wire Wire Line
+	5100 3100 5650 3100
+Wire Wire Line
+	5100 3100 5100 3200
+Wire Wire Line
+	4700 3200 4700 3100
+Wire Wire Line
+	4700 3100 4150 3100
+$Comp
+L Device:R R4
+U 1 1 61298D42
+P 4150 2850
+AR Path="/6126DE2F/61298D42" Ref="R4"  Part="1" 
+AR Path="/612B4E73/61298D42" Ref="R7"  Part="1" 
+AR Path="/612B55AF/61298D42" Ref="R10"  Part="1" 
+F 0 "R4" H 4220 2896 50  0000 L CNN
+F 1 "R" H 4220 2805 50  0000 L CNN
+F 2 "" V 4080 2850 50  0001 C CNN
+F 3 "~" H 4150 2850 50  0001 C CNN
+	1    4150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6129AE16
+P 4900 2850
+AR Path="/6126DE2F/6129AE16" Ref="R5"  Part="1" 
+AR Path="/612B4E73/6129AE16" Ref="R8"  Part="1" 
+AR Path="/612B55AF/6129AE16" Ref="R11"  Part="1" 
+F 0 "R5" H 4970 2896 50  0000 L CNN
+F 1 "R" H 4970 2805 50  0000 L CNN
+F 2 "" V 4830 2850 50  0001 C CNN
+F 3 "~" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 6129B3B8
+P 5650 2850
+AR Path="/6126DE2F/6129B3B8" Ref="R6"  Part="1" 
+AR Path="/612B4E73/6129B3B8" Ref="R9"  Part="1" 
+AR Path="/612B55AF/6129B3B8" Ref="R12"  Part="1" 
+F 0 "R6" H 5720 2896 50  0000 L CNN
+F 1 "R" H 5720 2805 50  0000 L CNN
+F 2 "" V 5580 2850 50  0001 C CNN
+F 3 "~" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3000 5650 3100
+Wire Wire Line
+	5650 2700 5650 2600
+Wire Wire Line
+	4900 2700 4900 2450
+Wire Wire Line
+	4900 3000 4900 3200
+Wire Wire Line
+	4150 3100 4150 3000
+Wire Wire Line
+	4150 2700 4150 2250
+$Comp
+L power:VCC #PWR012
+U 1 1 612A6799
+P 4150 1550
+AR Path="/6126DE2F/612A6799" Ref="#PWR012"  Part="1" 
+AR Path="/612B4E73/612A6799" Ref="#PWR014"  Part="1" 
+AR Path="/612B55AF/612A6799" Ref="#PWR016"  Part="1" 
+F 0 "#PWR012" H 4150 1400 50  0001 C CNN
+F 1 "VCC" H 4165 1723 50  0000 C CNN
+F 2 "" H 4150 1550 50  0001 C CNN
+F 3 "" H 4150 1550 50  0001 C CNN
+	1    4150 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1550 4150 1600
+Wire Wire Line
+	6000 2400 5950 2400
+Wire Wire Line
+	5250 2250 5200 2250
+Wire Wire Line
+	4450 2050 4500 2050
+$EndSCHEMATC
