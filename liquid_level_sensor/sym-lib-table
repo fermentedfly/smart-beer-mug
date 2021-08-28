@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name uWave)(type Legacy)(uri ${KIPRJMOD}/uWave.lib)(options "")(descr ""))
+)
